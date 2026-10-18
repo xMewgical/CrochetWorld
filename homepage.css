@@ -47,7 +47,7 @@ header img
 
 /* Main content */
 .intro {
-    padding: 150px 60px;
+    padding:60px;
     text-align: center;
     flex: 1;
     background-color: #e6d9f6;
