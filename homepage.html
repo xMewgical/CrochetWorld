@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CrochetWorld</title>
+        <link rel="stylesheet" href="homepage.css">
+    </head>
+    <script>
+    function openMenu() {
+        document.getElementById("sidebar").classList.add("active");
+        document.getElementById("overlay").classList.add("active");
+    }
+
+    function closeMenu() {
+        document.getElementById("sidebar").classList.remove("active");
+        document.getElementById("overlay").classList.remove("active");
+    }
+   </script>
+    <body>
+        <header>
+            <button class="menu-button" onclick="openMenu()">☰</button>
+            <div class="header-brand">
+            <img src="images/logo.png">
+            <h1>CrochetWorld</h1>
+            </div>
+        </header>
+
+
+        <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+        <aside class="sidebar" id="sidebar">
+          <div class="sidebar-header">
+         <button class="close-button" onclick="closeMenu()">✕</button>
+          </div>
+
+     <nav class="sidebar-nav">
+        <a href="homepage.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Help</a>
+    </nav>
+</aside>
+        
+
+
+        <section class="intro">
+            <h1>Welcome to the Crochet World</h1>
+            <p>Discover every piece of art that I make.</p>
+        </section>
+        <section class="Detail_intro">
+            <div class="d_intro">
+            <img src="images/crochet.png">
+            <p>This is a website where you can explore and buy the things I create.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 CrochetWorld. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

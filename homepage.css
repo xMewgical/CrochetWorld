@@ -1,0 +1,192 @@
+
+/* Basic page setup */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top section */
+header {
+    background-color: #fadcf0;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header h1{
+    font-size:50px;
+}
+header img 
+{
+    width: 100px;
+    height: 100px;
+   
+}
+.header-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+    padding-left: 0;
+}
+.header-brand img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Main content */
+.intro {
+    padding: 150px 60px;
+    text-align: center;
+    flex: 1;
+    background-color: #e6d9f6;
+}
+
+/* Bottom section */
+footer {
+    background-color: #fadcf0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+/* Hamburger menu */
+.menu-button {
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #c78298;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+/* Dark transparent overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(45, 25, 45, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Full-height sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 398px;
+    max-width: 85vw;
+    height: 100vh;
+    box-sizing: border-box;
+
+    background-color: #e9f5f3;
+    padding: 28px;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 11;
+    overflow-y: auto;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* Sidebar heading and close icon */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom:50px;
+    border: none;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 65px;
+    left: 27px;
+    background: none;
+    border: none;
+    color: #c78298;
+    font-size: 35px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* Vertical list */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 100px;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 10px 0;
+    color: #d995aa;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.sidebar-nav a:hover {
+    color: #b96d88;
+}
+
+
+
+
+.Detail_intro img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.Detail_intro{
+    background-color:#fae9e2;
+    align-items: center;
+    padding: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.Detail_intro p{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    padding-left:30px;
+}
+.d_intro{
+    align-items: center;
+    display : flex;
+    flex-direction: row;
+}
